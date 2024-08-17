@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Machine Care</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add any custom styles here */
+        .blog-category {
+            background-color: #f0f8ff; /* Light blue color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .blog-category img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .footer-logo img {
+            max-width: 150px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/logo.png.jpeg" alt="Company Logo" class="logo">
+                    <span class="company-name">MACHINE CARE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="contact-form ml-3">
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number">
+                        <button class="btn btn-primary mt-2" onclick="callMe()">Call Me</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Section -->
+    <main class="container mt-5">
+        <section id="blog">
+            <h1 class="display-4 mb-4">Our Blog</h1>
+            
+            <!-- Washing Machine -->
+            <div class="blog-category">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/tips wash.jpeg" alt="Washing Machine" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Washing Machine Tips, Tricks, and Energy-Saving Ideas</h2>
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Sort clothes: Separate clothes by color, fabric type, and soil level.</li>
+                            <li>Check labels: Follow fabric care instructions on labels.</li>
+                            <li>Measure detergent: Use the right amount of detergent for the load size.</li>
+                            <li>Pre-treat stains: Apply stain remover or detergent directly to stains.</li>
+                            <li>Don't overload: Leave enough space for clothes to move around.</li>
+                            <li>Regular maintenance: Clean the gasket, detergent dispenser, and drain pump filter.</li>
+                            <li>Use the right cycle: Choose the right wash cycle for the type of clothes.</li>
+                        </ul>
+                        <h4>Tricks:</h4>
+                        <ul>
+                            <li>Add a 1/2 cup of white vinegar to the rinse cycle to remove detergent residue and freshen clothes.</li>
+                            <li>Use baking soda to absorb odors and soften water.</li>
+                            <li>Add a 1/2 cup of hydrogen peroxide to the wash cycle to brighten whites and colors.</li>
+                            <li>Use a laundry bag to protect delicate items like lingerie or towels.</li>
+                            <li>Run a cleaning cycle with a washing machine cleaner or vinegar every 1-2 months.</li>
+                            <li>Don't forget to clean the washing machine's exterior regularly.</li>
+                            <li>Check and replace worn-out seals to prevent leaks and water damage.</li>
+                        </ul>
+                        <h4>Energy-saving tips:</h4>
+                        <ul>
+                            <li>Run full loads to maximize energy efficiency.</li>
+                            <li>Choose the energy-saving cycle or cold wash.</li>
+                            <li>Use a front-loading washing machine, which uses less water and energy.</li>
+                            <li>Turn off the washing machine when not in use to avoid standby power consumption.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Refrigerator -->
+            <div class="blog-category">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/tips 2 ref.jpeg" alt="Refrigerator" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Refrigerator Tips, Tricks, and Energy-Saving Ideas</h2>
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Set the right temperature: Between 37°F and 40°F (3°C and 4°C) for optimal food storage.</li>
+                            <li>Organize and declutter: Maximize space and reduce energy consumption.</li>
+                            <li>Store food properly: Keep raw meat, dairy, and vegetables in designated areas.</li>
+                            <li>Label and date leftovers: Ensure you use the oldest items first.</li>
+                            <li>Clean regularly: Wipe down shelves, walls, and the door seal.</li>
+                            <li>Check expiration dates: Discard expired or spoiled food.</li>
+                            <li>Use the correct shelves: Store heavy items at the bottom and lighter ones at the top.</li>
+                        </ul>
+                        <h4>Tricks:</h4>
+                        <ul>
+                            <li>Use the "first in, first out" rule: Ensure older items are consumed before newer ones.</li>
+                            <li>Store ice packs in the freezer: To keep your fridge cool during power outages.</li>
+                            <li>Keep a "use by" list: Note items approaching expiration dates.</li>
+                            <li>Use airtight containers: Prevent moisture and other flavors from affecting food.</li>
+                            <li>Freeze herbs in oil: Preserve fresh herbs for future use.</li>
+                            <li>Use the fridge's humidity control: Adjust for optimal storage of fruits and vegetables.</li>
+                            <li>Run a cleaning cycle: If your fridge has an automatic cleaning feature.</li>
+                        </ul>
+                        <h4>Energy-saving tips:</h4>
+                        <ul>
+                            <li>Defrost regularly: Reduce energy consumption and prevent frost buildup.</li>
+                            <li>Adjust the temperature: Raise the temperature slightly during off-peak hours.</li>
+                            <li>Unplug during vacations: If you'll be away for an extended period.</li>
+                            <li>Upgrade to an energy-efficient model: Consider replacing old refrigerators.</li>
+                            <li>Check door seals: Ensure they're tight to prevent cold air from escaping.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dishwasher -->
+            <div class="blog-category">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/tips 3 dish.jpeg" alt="Dishwasher" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Dishwasher Tips, Tricks, and Energy-Saving Ideas</h2>
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Scrape off excess food: Before loading dishes, remove large food particles.</li>
+                            <li>Face plates towards the center: Ensure water and detergent reach all surfaces.</li>
+                            <li>Load utensils correctly: Place forks and knives in designated holders or trays.</li>
+                            <li>Don't overcrowd: Leave space for water and detergent to circulate.</li>
+                            <li>Use the right detergent: Choose a dishwasher-specific detergent.</li>
+                            <li>Check and clean filters: Regularly clean or replace filters for optimal performance.</li>
+                            <li>Run a cleaning cycle: If your dishwasher has an automatic cleaning feature.</li>
+                        </ul>
+                        <h4>Tricks:</h4>
+                        <ul>
+                            <li>Use vinegar for a natural cleaning solution: Run a cycle with a cup of vinegar for a fresh-smelling dishwasher.</li>
+                            <li>Place a bowl of baking soda: On the bottom rack to neutralize odors.</li>
+                            <li>Clean the spray arms: To ensure water jets are not blocked.</li>
+                            <li>Check the door seal: Clean regularly to prevent leaks.</li>
+                            <li>Use a dishwasher rinse aid: To improve drying and prevent water spots.</li>
+                            <li>Clean the dishwasher door seal: Regularly to prevent leaks and water damage.</li>
+                            <li>Don't forget to clean the detergent dispenser: Regularly to ensure proper detergent release.</li>
+                        </ul>
+                        <h4>Energy-saving tips:</h4>
+                        <ul>
+                            <li>Run full loads: Maximize energy efficiency and reduce water consumption.</li>
+                            <li>Choose the energy-saving cycle: Or the "light" or "eco" mode.</li>
+                            <li>Turn off the heat dry option: Let dishes air dry to save energy.</li>
+                            <li>Upgrade to an energy-efficient model: Consider replacing old dishwashers.</li>
+                            <li>Check for leaks: Ensure the dishwasher door seal is tight to prevent energy loss.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Air Conditioner -->
+            <div class="blog-category">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/tips ac.jpeg" alt="Air Conditioner" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Air Conditioner Tips, Tricks, and Energy-Saving Ideas</h2>
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Regular maintenance: Clean filters, coils, and fans for optimal performance.</li>
+                            <li>Set the right temperature: Between 22°C and 25°C (72°F and 77°F) for comfort and efficiency.</li>
+                            <li>Use a programmable thermostat: Adjust temperature settings when you're not home.</li>
+                            <li>Seal air leaks: Prevent cooled air from escaping through gaps and cracks.</li>
+                            <li>Upgrade to a high-efficiency unit: Consider replacing old air conditioners.</li>
+                            <li>Use ceiling fans: Circulate air and reduce AC usage.</li>
+                            <li>Avoid overheating: Don't block air vents or place heat-producing appliances near the AC.</li>
+                        </ul>
+                        <h4>Tricks:</h4>
+                        <ul>
+                            <li>Use ice packs: Place them in front of the AC to cool the air faster.</li>
+                            <li>Clean the condenser coils: With a garden hose to improve efficiency.</li>
+                            <li>Use a dehumidifier: Reduce humidity and AC workload.</li>
+                            <li>Plant trees or install shades: Block direct sunlight and reduce cooling needs.</li>
+                            <li>Use a smart AC controller: Optimize performance and save energy.</li>
+                            <li>Don't forget to clean the air filter: Regularly to ensure proper airflow.</li>
+                            <li>Run a diagnostic test: Identify issues before they become major problems.</li>
+                        </ul>
+                        <h4>Energy-saving tips:</h4>
+                        <ul>
+                            <li>Turn off when not in use: Save energy and prolong the AC's lifespan.</li>
+                            <li>Use the energy-saving mode: Or the "eco" mode.</li>
+                            <li>Raise the temperature: By 1-2°C (2-4°F) to reduce energy consumption.</li>
+                            <li>Use zone cooling: Cool only occupied areas.</li>
+                            <li>Consider a ductless AC: For more efficient cooling.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="assets/logo.png.jpeg" alt="Machine Care Logo">
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p><strong>Phone Number:</strong> <a href="tel:+919035181616">9035181616</a></p>
+                <p><strong>Email:</strong> <a href="mailto:support@machinecare.coin">support@machinecare.coin</a></p>
+                <p><strong>Address:</strong></p>
+                <p>Number 124, 3rd Cross<br>
+                   Triveni Road, Yeshwanthpur<br>
+                   Bengaluru - 560022, Karnataka, India</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                <a href="https://wa.me/919035181616" target="_blank" class="social-icon whatsapp">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Machine Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Floating Icons -->
+<div class="floating-icons">
+    <a href="tel:+919035181616" class="floating-icon phone" title="Call Us">
+        <img src="assets/phone.icon.png" alt="Phone Icon">
+    </a>
+    <a href="https://wa.me/919035181616" class="floating-icon whatsapp" title="WhatsApp Us" target="_blank">
+        <img src="assets/whatsapp.icon.jpeg" alt="WhatsApp Icon">
+    </a>
+</div>

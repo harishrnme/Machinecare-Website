@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/logo.png.jpeg" alt="Company Logo" class="logo">
+                    <span class="company-name">MACHINE CARE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="contact-form ml-3">
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number">
+                        <button class="btn btn-primary mt-2" onclick="callMe()">Call Me</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <!-- Main content goes here -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1 class="hero-heading">Welcome to Machine Care</h1>
+            <p class="hero-subheading">Your trusted partner for appliance repair and maintenance.</p>
+            <button class="btn btn-primary book-appointment" data-toggle="modal" data-target="#appointmentModal">Book an Appointment</button>
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Type</label>
+                        <select class="form-control" id="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="washing_machine">Washing Machine</option>
+                            <option value="refrigerator">Refrigerator</option>
+                            <option value="dishwasher">Dishwasher</option>
+                            <option value="air_conditioner">Air Conditioner</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Contact Info Section -->
+<section class="contact-info">
+    <a href="tel:+1234567890" class="contact-link">
+        <i class="fas fa-phone-alt"></i> Call Us
+    </a>
+    <a href="https://wa.me/1234567890" class="contact-link" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+</section>
+
+
+
+
+
+
+<!-- About Us Section -->
+<section class="about-us">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Machine Care, Bengaluru's trusted appliance repair experts! With 15 years of dedicated service, our team has been providing top-notch repair and maintenance solutions for your home's most essential appliances. From washing machines to refrigerators, dishwashers to air conditioners, we've got you covered. Our experienced technicians are equipped to handle all makes and models, ensuring prompt and reliable service. Our commitment to quality, integrity, and customer satisfaction has earned us a loyal customer base across Bengaluru. Trust Machine Care to keep your appliances running smoothly and efficiently, so you can focus on what matters most!</p>
+        <a href="about.html" class="read-more">Read More</a>
+    </div>
+</section>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us - Machine Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .why-choose-us {
+            padding: 60px 0; /* Padding for the section */
+            background-color: #f9f9f9; /* Light background color */
+        }
+        .why-choose-us h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .why-choose-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .why-choose-us ul li {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .why-choose-us ul li::before {
+            content: "✔"; /* Checkmark icon */
+            font-size: 1.5rem;
+            color: #1e90ff; /* Light blue color for the checkmark */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Ensure this is included if it's not in a separate file) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/logo.png.jpeg" alt="Company Logo" class="logo">
+                    <span class="company-name">MACHINE CARE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="contact-form ml-3">
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number">
+                        <button class="btn btn-primary mt-2" onclick="callMe()">Call Me</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Certified Technicians:</strong> Our team is certified by leading appliance manufacturers.</li>
+                <li><strong>Quick Response Time:</strong> We respond to service requests within 2 hours.</li>
+                <li><strong>Transparent Pricing:</strong> No hidden charges or surprises.</li>
+                <li><strong>Quality Guarantee:</strong> We stand behind our repairs with a 6-month warranty.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function callMe() {
+            const phoneNumber = document.getElementById('phone').value;
+            if (phoneNumber) {
+                window.location.href = `tel:${phoneNumber}`;
+            } else {
+                alert('Please enter a phone number.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing Navbar, Hero Section, About Us Section -->
+    <!-- ... -->
+
+    <!-- Main Content -->
+    <main class="container-fluid mt-5">
+        <section id="services">
+            <h1 class="display-4 text-center">Our Services</h1>
+            <p class="lead text-center">Machine Care offers comprehensive repair and maintenance services for washing machines, refrigerators, dishwashers, and air conditioners.</p>
+
+            <!-- Container for the carousel with a light blue background -->
+            <div class="service-container">
+                <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Washing Machine Repair -->
+                        <div class="carousel-item active">
+                            <div class="service-item">
+                                <img src="assets/wm icon.jpeg" alt="Washing Machine Repair" class="service-icon">
+                                <h3>Washing Machine Repair</h3>
+                                <p><strong>Common faults:</strong> Drum issues, leaks, vibration, imbalance, spin problems, drainage issues, error codes</p>
+                                <p><strong>Repair process:</strong> Diagnosis, replacement of faulty parts (e.g., drum, bearings, gaskets), testing</p>
+                                <p><strong>Brands serviced:</strong> LG, Samsung, Whirlpool, IFB, Videocon, Godrej, Haier, Panasonic, Bosch, Siemens, Onida, Sansui, TCL, Lloyd</p>
+                            </div>
+                        </div>
+                        <!-- Refrigerator Repair -->
+                        <div class="carousel-item">
+                            <div class="service-item">
+                                <img src="assets/rf icon.jpeg" alt="Refrigerator Repair" class="service-icon">
+                                <h3>Refrigerator Repair</h3>
+                                <p><strong>Common faults:</strong> Cooling issues, leaks, compressor problems, defrosting issues, ice maker faults</p>
+                                <p><strong>Repair process:</strong> Diagnosis, replacement of faulty parts (e.g., compressor, condenser, evaporator), testing</p>
+                                <p><strong>Brands serviced:</strong> LG, Samsung, Whirlpool, IFB, Videocon, Godrej, Haier, Panasonic, Bosch, Siemens, Kelvinator, Electrolux, Hitachi, Toshiba</p>
+                            </div>
+                        </div>
+                        <!-- Dishwasher Repair -->
+                        <div class="carousel-item">
+                            <div class="service-item">
+                                <img src="assets/dish icon.jpeg" alt="Dishwasher Repair" class="service-icon">
+                                <h3>Dishwasher Repair</h3>
+                                <p><strong>Common faults:</strong> Sensor issues, leaks, vibration, cleaning problems, drying issues, error codes</p>
+                                <p><strong>Repair process:</strong> Diagnosis, replacement of faulty parts (e.g., sensors, pumps, valves), testing</p>
+                                <p><strong>Brands serviced:</strong> LG, Samsung, Whirlpool, IFB, Videocon, Godrej, Haier, Panasonic, Bosch, Siemens</p>
+                            </div>
+                        </div>
+                        <!-- Air Conditioner Repair -->
+                        <div class="carousel-item">
+                            <div class="service-item">
+                                <img src="assets/ac icon.jpeg" alt="Air Conditioner Repair" class="service-icon">
+                                <h3>Air Conditioner Repair</h3>
+                                <p><strong>Common faults:</strong> Cooling issues, leaks, compressor problems, fan motor faults, thermostat issues, error codes</p>
+                                <p><strong>Repair process:</strong> Diagnosis, replacement of faulty parts (e.g., compressor, fan motor, thermostat), testing</p>
+                                <p><strong>Brands serviced:</strong> LG, Samsung, Whirlpool, IFB, Videocon, Godrej, Haier, Panasonic, Bosch, Siemens, Voltas, Blue Star, Daikin, Hitachi, Toshiba, Carrier, Sansui, TCL, Lloyd, Mitsubishi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (if any) -->
+    <!-- ... -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing Navbar, Hero Section, About Us Section, Services Section -->
+    <!-- ... -->
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="container mt-5">
+        <div class="row">
+            <!-- Left Side: Images -->
+            <div class="col-md-4 d-none d-md-block">
+                <div class="why-images">
+                    <div class="why-image">
+                        <img src="assets/all in one.jpeg" alt="Image 1" class="img-fluid">
+                    </div>
+                    <div class="why-image mt-3">
+                        <img src="assets/all.jpeg" alt="Image 2" class="img-fluid">
+                    </div>
+                    <div class="why-image mt-3">
+                        <img src="assets/potr.png" alt="Image 3" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="col-md-8">
+                <h2>Why Choose Machine Care for Your Home Appliance Repair and Services?</h2>
+                <p>At Machine Care, we understand the frustration of dealing with broken appliances. That's why we're dedicated to providing top-notch repair and maintenance services to get your household back up and running smoothly.</p>
+                
+                <div class="feature-item">
+                    <img src="assets/expert icon.png" alt="Expert Technicians" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Expert Technicians</h4>
+                        <p>Our team of experienced and certified technicians has the knowledge and skills to fix any appliance issue. We're familiar with all major brands and models, so you can trust us to get the job done right.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <img src="assets/convienent.png" alt="Convenient Service" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Convenient Service</h4>
+                        <p>We offer flexible scheduling to accommodate your busy schedule. Our technicians arrive on time, so you don't have to wait around all day.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <img src="assets/quality work.png" alt="Quality Workmanship" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Quality Workmanship</h4>
+                        <p>We use only genuine parts and materials to ensure durability and longevity. Our work is backed by a comprehensive warranty, giving you peace of mind.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <img src="assets/pers icon.png" alt="Personalized Support" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Personalized Support</h4>
+                        <p>Our friendly customer service team is always available to answer your questions and concerns. We take the time to explain the repair process and provide transparent pricing.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <img src="assets/reli icon.png" alt="Reliable and Efficient" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Reliable and Efficient</h4>
+                        <p>We prioritize prompt and efficient service to minimize downtime. Our goal is to get your appliances up and running quickly, so you can get back to your routine.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <img src="assets/rupees icon.png" alt="Trustworthy and Affordable" class="feature-icon">
+                    <div class="feature-text">
+                        <h4>Trustworthy and Affordable</h4>
+                        <p>We offer competitive pricing without compromising on quality. Our transparent billing ensures no hidden surprises.</p>
+                    </div>
+                </div>
+
+                <p>Choose Machine Care for your home appliance repair and services, and experience the difference for yourself!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (if any) -->
+    <!-- ... -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing Navbar, Hero Section, About Us Section, Services Section, Why Choose Us Section -->
+    <!-- ... -->
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="container mt-5">
+        <div class="row">
+            <!-- Left Side: Contact Form and Image -->
+            <div class="col-md-4">
+                <div class="contact-section bg-light p-4 rounded shadow-sm">
+                    <h2>Contact Us</h2>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="appliance">Select Appliance</label>
+                                <select class="form-control" id="appliance">
+                                    <option>Select...</option>
+                                    <option>Washing Machine</option>
+                                    <option>Refrigerator</option>
+                                    <option>Dishwasher</option>
+                                    <option>Air Conditioner</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact-image mt-4">
+                        <img src="assets/wash.jpeg" alt="Contact Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: FAQs -->
+            <div class="col-md-8">
+                <div class="faqs bg-light p-4 rounded shadow-sm">
+                    <h2>FAQs</h2>
+                    
+                    <h4>General Questions</h4>
+                    <div class="faq-item">
+                        <strong>Q: What areas do you serve?</strong>
+                        <p>A: We serve Bengaluru and surrounding areas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: What types of appliances do you repair?</strong>
+                        <p>A: We repair washing machines, refrigerators, dishwashers, and air conditioners.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: Do you offer emergency services?</strong>
+                        <p>A: Yes, we offer emergency services for urgent repairs.</p>
+                    </div>
+
+                    <h4>Repair Process</h4>
+                    <div class="faq-item">
+                        <strong>Q: What is the repair process?</strong>
+                        <p>A: Our repair process includes:</p>
+                        <ul>
+                            <li>Diagnosis of the issue</li>
+                            <li>Replacement of faulty parts (if necessary)</li>
+                            <li>Testing to ensure proper functioning</li>
+                            <li>Quality check and final testing</li>
+                        </ul>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: How long does the repair process take?</strong>
+                        <p>A: The repair process typically takes 1-3 hours, depending on the complexity of the issue.</p>
+                    </div>
+
+                    <h4>Pricing</h4>
+                    <div class="faq-item">
+                        <strong>Q: How is pricing determined?</strong>
+                        <p>A: Pricing is determined based on the type of appliance, complexity of the issue, and replacement parts needed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: Do you offer any discounts?</strong>
+                        <p>A: Yes, we offer discounts for senior citizens, students, and bulk bookings.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: What are the visiting charges?</strong>
+                        <p>A: Our visiting charges are ₹250, which will be waived if you proceed with the repair.</p>
+                    </div>
+
+                    <h4>Warranty & Guarantees</h4>
+                    <div class="faq-item">
+                        <strong>Q: What kind of warranty do you offer?</strong>
+                        <p>A: We offer a 6-month warranty on all repairs.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: What is covered under the warranty?</strong>
+                        <p>A: The warranty covers replacement parts and labor for the same issue.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Q: Do you offer any guarantees?</strong>
+                        <p>A: Yes, we offer a satisfaction guarantee. If you're not satisfied with our service, we'll work with you to resolve the issue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (if any) -->
+    <!-- ... -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Areas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section id="service-areas">
+            <h1>Service Areas</h1>
+            <div class="service-areas-content">
+                <div class="area"><strong>A</strong><br>Adugodi - 560030</div>
+                <div class="area">Agaram - 560007</div>
+                <div class="area">Air Force Station Yelahanka - 560063</div>
+                <div class="area">Arabic College - 560045</div>
+                <div class="area">Ashok Nagar - 560025</div>
+                <div class="area">Austin Town - 560047</div>
+                <div class="area"><strong>B</strong><br>Banashankari - 560050</div>
+                <div class="area">Banashankari 2nd Stage - 560070</div>
+                <div class="area">Banashankari 3rd Stage - 560085</div>
+                <div class="area">Bangalore City H.O. - 560002</div>
+                <div class="area">Bangalore G.P.O. - 560001</div>
+                <div class="area">Bangalore University - 560056</div>
+                <div class="area">Bannerghatta - 560083</div>
+                <div class="area">Bannerghatta Road - 560076</div>
+                <div class="area">Bansawadi - 560043</div>
+                <div class="area">Basavangudi - 560004</div>
+                <div class="area">Basaveswaranagar - 560079</div>
+                <div class="area">Benson Town - 560046</div>
+                <div class="area">Bharath Nagar - 560001</div>
+                <div class="area">Bilekahalli - 560076</div>
+                <div class="area">Bommanahalli - 560068</div>
+                <div class="area">Brigade Road - 560025</div>
+                <div class="area">Broad Way Road - 560051</div>
+                <div class="area">BTM Layout - 560076</div>
+                <div class="area">Byatarayanapura - 560092</div>
+                <div class="area"><strong>C</strong><br>Cambridge Layout - 560008</div>
+                <div class="area">Carmelram - 560035</div>
+                <div class="area">Chamarajpet West - 560018</div>
+                <div class="area">Chandralayout - 560040</div>
+                <div class="area">Chickpet - 560053</div>
+                <div class="area">Chikkabanavara - 560090</div>
+                <div class="area">Chikkalasandra - 560061</div>
+                <div class="area">CV Raman Nagar - 560093</div>
+                <div class="area"><strong>D</strong><br>Dasarahalli - 560057</div>
+                <div class="area">Dharmaram College - 560029</div>
+                <div class="area">Doddakallasandra - 560062</div>
+                <div class="area">Domlur - 560071</div>
+                <div class="area">Dooravaninagar - 560016</div>
+                <div class="area">Dr. Ambedkar Nagar - 560045</div>
+                <div class="area"><strong>E</strong><br>East End Main Road - 560034</div>
+                <div class="area">Electronic City - 560100</div>
+                <div class="area"><strong>F</strong><br>Frazer Town - 560005</div>
+                <div class="area"><strong>G</strong><br>Gandhinagar - 560009</div>
+                <div class="area">Ganganagar - 560032</div>
+                <div class="area">Gavipuram Ext. - 560019</div>
+                <div class="area">G.K.V.K. - 560065</div>
+                <div class="area">Gokula Extension - 560054</div>
+                <div class="area">Govt. Electric Factory - 560026</div>
+                <div class="area">Guddadhalli - 560026</div>
+                <div class="area"><strong>H</strong><br>HAL - 560017</div>
+                <div class="area">HAL 2nd Stage - 560008</div>
+                <div class="area">HAL 3rd Stage - 560075</div>
+                <div class="area">Hanumanthanagar - 560019</div>
+                <div class="area">Hebbal Agri. Farm - 560024</div>
+                <div class="area">Hesaraghatta - 560088</div>
+                <div class="area">Hesaraghatta Lake - 560089</div>
+                <div class="area">HMT - 560031</div>
+                <div class="area">Hongasandra - 560068</div>
+                <div class="area">Hoodi - 560048</div>
+                <div class="area">Hulimavu - 560076</div>
+                <div class="area"><strong>I</strong><br>Indiranagar - 560038</div>
+                <div class="area">Infantry Road - 560001</div>
+                <div class="area">ISRO - 560017</div>
+                <div class="area"><strong>J</strong><br>J.C. Nagar - 560006</div>
+                <div class="area">Jakkasandra - 560034</div>
+                <div class="area">Jalahalli - 560013</div>
+                <div class="area">Jalahalli East - 560014</div>
+                <div class="area">Jalahalli West - 560015</div>
+                <div class="area">Jayachamarajendra Nagar - 560006</div>
+                <div class="area">Jayanagar - 560041</div>
+                <div class="area">Jayanagar 1st Block - 560011</div>
+                <div class="area">Jayanagar 2nd Block - 560004</div>
+                <div class="area">Jayanagar 3rd Block - 560041</div>
+                <div class="area">Jayanagar 4th Block - 560011</div>
+                <div class="area">Jayanagar 5th Block - 560041</div>
+                <div class="area">Jayanagar 6th Block - 560070</div>
+                <div class="area">Jayanagar 7th Block - 560082</div>
+                <div class="area">Jayanagar 8th Block - 560070</div>
+                <div class="area">Jayanagar 9th Block - 560041</div>
+                <div class="area"><strong>K</strong><br>Kadabagere - 560067</div>
+                <div class="area">Kadugodi - 560067</div>
+                <div class="area">Kalyan Nagar - 560043</div>
+                <div class="area">Kamakshipalya - 560079</div>
+                <div class="area">Kengeri - 560060</div>
+                <div class="area">Kengeri Satellite Town - 560060</div>
+                <div class="area">Kodandarampura - 560067</div>
+                <div class="area">Kodigehalli - 560097</div>
+                <div class="area">Koramangala - 560034</div>
+                <div class="area">Kothanur - 560077</div>
+                <div class="area">K R Market - 560002</div>
+                <div class="area">K R Puram - 560036</div>
+                <div class="area">Kudlu - 560068</div>
+                <div class="area"><strong>L</strong><br>Langford Town - 560025</div>
+                <div class="area">Laggere - 560058</div>
+                <div class="area"><strong>M</strong><br>M.G. Road - 560001</div>
+                <div class="area">Madhavanagar - 560001</div>
+                <div class="area">Mahadevapura - 560048</div>
+                <div class="area">Mahalakshmipuram - 560086</div>
+                <div class="area">Malleshpalaya - 560075</div>
+                <div class="area">Malleshwaram - 560003</div>
+                <div class="area">Marathahalli - 560037</div>
+                <div class="area">Margosa Road - 560025</div>
+                <div class="area">Mathikere - 560054</div>
+                <div class="area">Medihalli - 560097</div>
+                <div class="area">Mysore Road - 560026</div>
+                <div class="area"><strong>N</strong><br>Nagarbhavi - 560072</div>
+                <div class="area">Nagasandra - 560073</div>
+                <div class="area">Nagavara - 560045</div>
+                <div class="area">Narasimharaja Colony - 560019</div>
+                <div class="area">Nayanadahalli - 560039</div>
+                <div class="area">Neelasandra - 560078</div>
+                <div class="area">Nelamangala - 562123</div>
+                <div class="area">New Thippasandra - 560075</div>
+                <div class="area">NRI Layout - 560016</div>
+                <div class="area">Nyanappanahalli - 560073</div>
+                <div class="area"><strong>O</strong><br>Old Airport Road - 560017</div>
+                <div class="area">Old Madras Road - 560016</div>
+                <div class="area">Outer Ring Road - 560037</div>
+                <div class="area">Oxford College - 560079</div>
+                <div class="area"><strong>P</strong><br>Padmanabhanagar - 560070</div>
+                <div class="area">Palace Guttahalli - 560003</div>
+                <div class="area">Peenya - 560058</div>
+                <div class="area">Peenya 1st Stage - 560058</div>
+                <div class="area">Peenya 2nd Stage - 560091</div>
+                <div class="area">Peenya Industrial Area - 560058</div>
+                <div class="area">Phoenix Market City - 560048</div>
+                <div class="area">Pulikeshi Nagar - 560005</div>
+                <div class="area"><strong>Q</strong><br>Queens Road - 560052</div>
+                <div class="area"><strong>R</strong><br>R.T. Nagar - 560032</div>
+                <div class="area">R.T. Nagar Post Office - 560032</div>
+                <div class="area">Rabindranagar - 560070</div>
+                <div class="area">Rajajinagar - 560010</div>
+                <div class="area">Rajarajeshwarinagar - 560098</div>
+                <div class="area">Ramamurthy Nagar - 560016</div>
+                <div class="area">Richmond Town - 560025</div>
+                <div class="area">Rmv Extension - 560080</div>
+                <div class="area">RT Nagar - 560032</div>
+                <div class="area"><strong>S</strong><br>Sadashivanagar - 560080</div>
+                <div class="area">Sahakaranagar - 560092</div>
+                <div class="area">Sanjaynagar - 560094</div>
+                <div class="area">Sarjapur - 562125</div>
+                <div class="area">Sarjapur Road - 560035</div>
+                <div class="area">Shanthinagar - 560027</div>
+                <div class="area">Shivajinagar - 560001</div>
+                <div class="area">Singasandra - 560068</div>
+                <div class="area">Sivan Chetty Gardens - 560042</div>
+                <div class="area">Sonnenahalli - 560090</div>
+                <div class="area">Subramanyanagar - 560021</div>
+                <div class="area">Sudhama Nagar - 560027</div>
+                <div class="area">Sunkadakatte - 560091</div>
+                <div class="area"><strong>T</strong><br>TC Palya Road - 560097</div>
+                <div class="area">Thanisandra - 560077</div>
+                <div class="area">Thippasandra - 560075</div>
+                <div class="area">Thyagarajanagar - 560028</div>
+                <div class="area">Tilak Nagar - 560041</div>
+                <div class="area">Tumkur Road - 560022</div>
+                <div class="area"><strong>U</strong><br>Ullal - 560056</div>
+                <div class="area">Ulsoor - 560008</div>
+                <div class="area">Uttarahalli - 560061</div>
+                <div class="area"><strong>V</strong><br>Vadiraja Nagar - 560028</div>
+                <div class="area">Vaderahalli - 560026</div>
+                <div class="area">Vani Vilas Road - 560002</div>
+                <div class="area">Varthur - 560087</div>
+                <div class="area">Vasanth Nagar - 560052</div>
+                <div class="area">Vasantapura - 560061</div>
+                <div class="area">Vidyaranyapura - 560097</div>
+                <div class="area">Vijayanagar - 560040</div>
+                <div class="area">Vishveswarapuram - 560004</div>
+                <div class="area">Vittal Mallya Road - 560001</div>
+                <div class="area"><strong>W</strong><br>Wheeler Road - 560084</div>
+                <div class="area">Whitefield - 560067</div>
+                <div class="area">Whitefield Post - 560067</div>
+                <div class="area"><strong>Y</strong><br>Yeswanthpur - 560022</div>
+                <div class="area">Yelahanka - 560063</div>
+                <div class="area">Yelahanka New Town - 560106</div>
+                <div class="area">Yeshwantpur - 560022</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- Floating Icons -->
+<div class="floating-icons">
+    <a href="tel:+919035181616" class="floating-icon phone" title="Call Us">
+        <img src="assets/phone.icon.png" alt="Phone Icon">
+    </a>
+    <a href="https://wa.me/919035181616" class="floating-icon whatsapp" title="WhatsApp Us" target="_blank">
+        <img src="assets/whatsapp.icon.jpeg" alt="WhatsApp Icon">
+    </a>
+</div>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <img src="assets/logo.png.jpeg" alt="Machine Care Logo">
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+            <h3>Contact Information</h3>
+            <p><strong>Phone Number:</strong> <a href="tel:+919035181616">9035181616</a></p>
+            <p><strong>Email:</strong> <a href="mailto:support@machinecare.coin">support@machinecare.coin</a></p>
+            <p><strong>Address:</strong></p>
+            <p>Number 124, 3rd Cross<br>
+               Triveni Road, Yeshwanthpur<br>
+               Bengaluru - 560022, Karnataka, India</p>
+        </div>
+
+          <!-- Navigation Links -->
+          <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://wa.me/919035181616" target="_blank" class="social-icon whatsapp">WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Machine Care. All rights reserved.</p>
+    </div>
+</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Contact Popup -->
+<div id="contact-popup" class="contact-popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h3>Contact Us</h3>
+        <form id="contact-form-popup">
+            <div class="form-group">
+                <label for="popup-name">Name</label>
+                <input type="text" id="popup-name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="popup-phone">Phone Number</label>
+                <input type="tel" id="popup-phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitContactForm()">Call Me</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    // Show the popup when the page loads
+    window.onload = function() {
+        document.getElementById('contact-popup').style.display = 'flex';
+    };
+    
+    // Close the popup
+    function closePopup() {
+        document.getElementById('contact-popup').style.display = 'none';
+    }
+    
+    // Handle form submission (for demonstration, we'll just log the data)
+    function submitContactForm() {
+        var name = document.getElementById('popup-name').value;
+        var phone = document.getElementById('popup-phone').value;
+        console.log('Name:', name);
+        console.log('Phone:', phone);
+        // Here you can add code to actually handle form submission
+        // For example, sending data to a server or making a phone call
+        closePopup(); // Close the popup after submission
+    }
+    </script>
+    
+
+    
+
+
+
+
+
+<!-- Contact Popup -->
+<div id="contactPopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your mobile number">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="callMe()">Call Me</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function showPopup() {
+        document.getElementById('contactPopup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('contactPopup').style.display = 'none';
+    }
+
+    function callMe() {
+        // Create a "tel" link to initiate the call
+        const callLink = 'tel:+919035181616';
+        
+        // Open the call link
+        window.location.href = callLink;
+        
+        // Optionally, you can close the popup after initiating the call
+        closePopup();
+    }
+
+    // Show the popup when the page loads
+    window.onload = function() {
+        showPopup();
+    };
+</script>

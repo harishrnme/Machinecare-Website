@@ -1,0 +1,1427 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000; /* Black text */
+    font-family: 'Arial', sans-serif; /* Stylish font */
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Black text */
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form .form-control {
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.contact-form .btn {
+    border-radius: 20px;
+    background-color: #ff6600; /* Orange button */
+    border: none;
+    color: #ffffff; /* White text */
+}
+
+.contact-form .btn:hover {
+    background-color: #e55b00; /* Darker orange on hover */
+}
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-subheading {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.book-appointment {
+    border-radius: 20px;
+    background-color: #ff6600; /* Orange button */
+    border: none;
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.book-appointment:hover {
+    background-color: #e55b00; /* Darker orange on hover */
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body .form-control {
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.modal-body .btn-primary {
+    border-radius: 20px;
+    background-color: #ff6600;
+    border: none;
+    color: #ffffff;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #e55b00;
+}
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh; /* Reduced height */
+    background: url('assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 2;
+    padding: 20px; /* Adjust padding if needed */
+}
+
+.hero-heading {
+    font-size: 2.5rem; /* Adjust font size if needed */
+    font-weight: bold;
+}
+
+.hero-subheading {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.book-appointment {
+    border-radius: 20px;
+    background-color: #ff6600; /* Orange button */
+    border: none;
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.book-appointment:hover {
+    background-color: #e55b00; /* Darker orange on hover */
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body .form-control {
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.modal-body .btn-primary {
+    border-radius: 20px;
+    background-color: #ff6600;
+    border: none;
+    color: #ffffff;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #e55b00;
+}
+
+
+
+
+
+/* Contact Info Section */
+.contact-info {
+    height: 0.5in; /* 0.5 inch height */
+    background-color: #e6f7ff; /* Light blue background */
+    border-top: 1px solid lightblue; /* Border at the top */
+    border-bottom: 1px solid lightblue; /* Border at the bottom */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-link i {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.read-more {
+    display: inline-block;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid #007bff;
+    padding: 5px 0;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* About Us Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.about-us-detail {
+    padding: 80px 20px 20px; /* Added padding-top to account for the fixed navbar */
+}
+
+.about-us-detail .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-us-detail h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    border: 2px solid #b3d9ff;
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 600px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.content-box h2, .content-box h3 {
+    color: #333;
+}
+
+.content-box p, .content-box ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.content-box ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#services {
+    padding: 20px 0;
+}
+
+.service-container {
+    background-color: #e0f7fa; /* Very light blue background for the container */
+    border: 3px solid orange; /* Orange border for the container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensure border-radius is visible on the content */
+}
+
+.service-item {
+    background: white; /* White background for the service items */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    height: 3in; /* Height of 3 inches */
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.carousel-inner {
+    padding: 20px 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+#why-choose-us {
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Very light shadow */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px;
+}
+
+.why-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.why-image img {
+    width: 80%;
+    max-width: 300px; /* Reduce max-width */
+    border-radius: 8px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.feature-text {
+    max-width: 80%;
+}
+
+.feature-text h4 {
+    margin: 0 0 10px 0;
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature-icon {
+        margin-bottom: 10px;
+    }
+
+    .why-image img {
+        width: 100%; /* Ensure images are responsive on small screens */
+        max-width: none;
+    }
+}
+
+
+
+
+
+
+
+
+#contact-us {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.contact-form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
+
+.contact-image {
+    margin-top: 20px;
+    text-align: center; /* Center the image in its container */
+}
+
+.contact-image img {
+    width: 100%; /* Ensure the image fits the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500x; /* Optional: Limit the height of the image */
+}
+
+.faqs {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.faqs h2 {
+    margin-bottom: 20px;
+}
+
+.faqs h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.faq-item ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+    #contact-us .row {
+        flex-direction: column;
+    }
+    
+    .col-md-4, .col-md-8 {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Blog Section Styles */
+#blog {
+    padding: 40px 0;
+}
+
+.blog-category {
+    margin-bottom: 40px;
+}
+
+.blog-category img {
+    max-height: 200px; /* Optional: Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+}
+
+.blog-category h2 {
+    margin-top: 0;
+}
+
+.blog-category h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.blog-category ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.blog-category li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .blog-category {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+#service-areas {
+    width: 100%;
+    height: 4in; /* Set the height to 4 inches */
+    overflow: auto;
+}
+
+#service-areas h1 {
+    font-size: 0.8em;
+    margin: 0 0 0.5em;
+}
+
+.service-areas-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.area {
+    background-color: #f0f8ff;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    padding: 0.15em;
+    margin: 0.1em 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 0.6em; /* Reduced font size for better fit */
+    line-height: 1.1;
+    width: calc(100% / 4 - 0.2em); /* Adjust width to fit more content */
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+#service-areas {
+    width: 100%;
+    height: 4in; /* Set the height to 4 inches */
+    overflow: auto;
+}
+
+#service-areas h1 {
+    font-size: 1.5em; /* Increase font size for the heading */
+    font-weight: bold; /* Make the heading bold */
+    margin: 0 0 0.5em;
+}
+
+.service-areas-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.area {
+    background-color: #f0f8ff;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    padding: 0.3em;
+    margin: 0.2em 0.1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 0.8em;
+    line-height: 1.2;
+    width: calc(100% / 4 - 0.4em);
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* Medium Blue Background */
+    color: #ffffff;
+    padding: 0.5em; /* Reduced padding to fit within 2 inches */
+    height: 2in; /* Set the height to 2 inches */
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 100px;
+    margin-right: 1em;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-contact, .footer-nav, .footer-social {
+    flex: 1;
+    min-width: 150px;
+    margin-right: 1em;
+}
+
+.footer-contact h3, .footer-nav h3, .footer-social h3 {
+    margin-bottom: 0.3em;
+    font-size: 0.9em; /* Smaller font size for headings */
+    color: #ffffff;
+}
+
+.footer-contact p, .footer-nav ul, .footer-social a {
+    font-size: 0.8em;
+    color: #ffffff;
+    margin: 0.3em 0;
+}
+
+.footer-contact a, .footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover, .footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 0.3em 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0.3em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-social a:hover {
+    color: #cccccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.7em; /* Smaller font size for the copyright text */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* Medium Blue Background */
+    color: #ffffff;
+    padding: 0.5em; /* Reduced padding to fit within 2 inches */
+    height: 2in; /* Set the height to 2 inches */
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 100px;
+    margin-right: 1em;
+}
+
+.footer-logo img {
+    height: 1in; /* Set the height of the logo to 1 inch */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.footer-contact, .footer-nav, .footer-social {
+    flex: 1;
+    min-width: 150px;
+    margin-right: 1em;
+}
+
+.footer-contact h3, .footer-nav h3, .footer-social h3 {
+    margin-bottom: 0.3em;
+    font-size: 0.9em; /* Smaller font size for headings */
+    color: #ffffff;
+}
+
+.footer-contact p, .footer-nav ul, .footer-social a {
+    font-size: 0.8em;
+    color: #ffffff;
+    margin: 0.3em 0;
+}
+
+.footer-contact a, .footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover, .footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 0.3em 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0.3em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-social a:hover {
+    color: #cccccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.7em; /* Smaller font size for the copyright text */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* General Styles for Header and Navigation */
+header {
+    background-color: #003366; /* Example background color */
+    color: #ffffff;
+    padding: 1em; /* Ensure there's enough padding around the header */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Consistent background color */
+    padding: 0.5em 1em; /* Padding for the nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the main content is not overlapping with the header */
+main {
+    padding-top: 2em; /* Add top padding to avoid overlap */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Specific styles for the about page heading */
+.about-heading {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-top: 1em; /* Ensure space above the heading */
+}
+
+/* Additional styles to adjust layout and spacing */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+
+
+
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.policy-container {
+    border: 2px solid #b3d9ff;
+    border-radius: 5px;
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+}
+
+/* Custom styling for links */
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.policy-container {
+    border: 2px solid #b3d9ff;
+    border-radius: 5px;
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-contact, .footer-nav, .footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-contact p, .footer-nav ul, .footer-social a {
+    margin: 5px 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    display: block;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c2c2c;
+}
+
+/* Custom styling for links */
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Navigation Bar Styles */
+.navbar {
+    padding: 0.5rem 1rem; /* Decrease padding to reduce height */
+    background-color: #f8f9fa; /* Adjust background color if needed */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Decrease padding for nav links */
+}
+
+.navbar-brand .logo {
+    height: 40px; /* Adjust the height of the logo if necessary */
+    width: auto;
+}
+
+.navbar-brand .company-name {
+    font-size: 1.5rem; /* Adjust font size if needed */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border for cleaner appearance */
+}
+
+.contact-form {
+    margin-left: 1rem; /* Adjust margin to align with the navbar */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...'); /* Ensure the toggle icon is visible and properly sized */
+}
+
+/* Additional margin adjustment for the top of the page content */
+body {
+    padding-top: 60px; /* Adjust based on the final height of your navbar */
+}
+
+/* Optional: Adjust the margin for headings if they are still overlapping */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem; /* Add margin to ensure content doesn't overlap with navbar */
+}
+
+
+
+
+
+
+
+
+
+/* Popup Styles */
+.contact-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Ensure it appears on top */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-content h3 {
+    margin-top: 0;
+}
+
+.popup-content .form-group {
+    margin-bottom: 15px;
+}
+
+.popup-content .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup-content .btn {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency for the overlay */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for the overlay */
+    z-index: 1000; /* On top */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow around the popup content */
+    position: relative; /* To position the close button */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/* Floating Icons */
+.floating-icons {
+    position: fixed;
+    right: 20px; /* Distance from the right edge */
+    top: 50%; /* Vertically center the icons */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    z-index: 999; /* Ensure icons are on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-icon {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: circular icons */
+}
+
+.floating-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Specific styles for phone and WhatsApp icons */
+.floating-icon.phone img {
+    background-color: #4CAF50; /* Optional: background color for phone icon */
+    padding: 10px;
+}
+
+.floating-icon.whatsapp img {
+    background-color: #25D366; /* Optional: background color for WhatsApp icon */
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* Floating Icons */
+.floating-icons {
+    position: fixed;
+    right: 20px; /* Distance from the right edge */
+    top: 75%; /* Position 75% down the page */
+    transform: translateY(-50%); /* Adjust for centering */
+    z-index: 999; /* Ensure icons are on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-icon {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: circular icons */
+}
+
+.floating-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Specific styles for phone and WhatsApp icons */
+.floating-icon.phone img {
+    background-color: #4CAF50; /* Optional: background color for phone icon */
+    padding: 10px;
+}
+
+.floating-icon.whatsapp img {
+    background-color: #25D366; /* Optional: background color for WhatsApp icon */
+    padding: 10px;
+}
+
+
+
+/* Floating Icons */
+.floating-icons {
+    position: fixed;
+    right: 20px; /* Distance from the right edge */
+    top: 75%; /* Position 75% down the page */
+    transform: translateY(-50%); /* Adjust for centering */
+    z-index: 999; /* Ensure icons are on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Floating icon base styles */
+.floating-icon {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    animation: shake 2s infinite; /* Apply shaking animation */
+}
+
+.floating-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: circular icons */
+}
+
+/* Shaking animation keyframes */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Hover effect for slight enlargement */
+.floating-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Specific styles for phone and WhatsApp icons */
+.floating-icon.phone img {
+    background-color: #4CAF50; /* Optional: background color for phone icon */
+    padding: 10px;
+}
+
+.floating-icon.whatsapp img {
+    background-color: #25D366; /* Optional: background color for WhatsApp icon */
+    padding: 10px;
+}

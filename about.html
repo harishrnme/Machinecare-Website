@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Machine Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS to adjust padding for content */
+        body {
+            padding-top: 56px; /* Adjust this value according to the height of your navigation bar */
+        }
+        .about-us-detail {
+            padding: 60px 0; /* Add padding to top and bottom of the about us section */
+        }
+        .content-box {
+            border: 2px solid lightblue; /* Light blue border */
+            background-color: #f0f8ff; /* Light blue background color */
+            padding: 20px;
+            border-radius: 8px;
+            overflow-y: auto; /* Enable vertical scrolling if content overflows */
+            max-height: 800px; /* Maximum height for scrolling box */
+        }
+    </style>
+</head>
+<body>
+    
+   <!-- Navigation Bar -->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png.jpeg" alt="Company Logo" class="logo">
+                <span class="company-name">MACHINE CARE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="contact-form ml-3">
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number">
+                    <button class="btn btn-primary mt-2" onclick="callMe()">Call Me</button>
+                </div>
+            </div>
+        </div>
+       </div>
+        </nav>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="about-us-detail">
+        <div class="container">
+            <h1>Company History</h1>
+            <div class="content-box">
+                <h2>Machine Care: A Legacy of Trust and Excellence</h2>
+                <p>In 2009, Machine Care was founded in Bengaluru with a simple yet ambitious vision: to provide top-notch appliance repair services that would exceed customer expectations. Our journey began with a small team of passionate technicians and a commitment to quality, integrity, and customer satisfaction.</p>
+                <h3>Early Days (2009-2012)</h3>
+                <p>Our founder, Harish, a seasoned technician with years of experience, saw an opportunity to fill a gap in the market. He assembled a team of skilled professionals who shared his passion for delivering exceptional service. Initially, we focused on repairing washing machines and refrigerators, but soon expanded our services to include dishwashers and air conditioners.</p>
+                <h3>Growth and Expansion (2012-2015)</h3>
+                <p>As our reputation grew, so did our team. We invested in state-of-the-art equipment and training to ensure our technicians were equipped to handle the latest appliance technologies. Our customer base expanded, and we started receiving requests from across Bengaluru. We responded by opening new service centers, making our services more accessible to the community.</p>
+                <h3>Innovation and Excellence (2015-2018)</h3>
+                <p>We introduced a customer-centric approach, focusing on prompt response times, transparent pricing, and exceptional after-sales support. Our technicians underwent rigorous training to enhance their skills and knowledge. We also implemented a quality control process to ensure every repair met our high standards.</p>
+                <h3>Achievements and Accolades (2018-Present)</h3>
+                <p>Today, Machine Care is Bengaluru's trusted appliance repair expert, with:</p>
+                <ul>
+                    <li>15 years of dedicated service</li>
+                    <li>A team of 10+ experienced technicians</li>
+                    <li>10,000+ satisfied customers</li>
+                    <li>A 95% customer retention rate</li>
+                </ul>
+                <p>We continue to innovate, adopting new technologies and techniques to stay ahead of the curve. Our commitment to excellence has earned us numerous awards and recognition from industry peers.</p>
+                <h3>Our Legacy</h3>
+                <p>Machine Care's success is built on a foundation of trust, quality, and customer satisfaction. We take pride in our work, knowing that every repaired appliance brings joy and convenience to our customers' lives. As we move forward, we remain dedicated to our core values, ensuring that every interaction with Machine Care is a positive experience.</p>
+                <h3>Mission Statement and Core Values</h3>
+                <p><strong>Mission Statement:</strong> "Empowering households and businesses with reliable, efficient, and sustainable appliance solutions, delivered with exceptional service and care."</p>
+                <p><strong>Core Values:</strong></p>
+                <ul>
+                    <li>Customer Centricity: We prioritize our customers' needs, ensuring prompt, transparent, and courteous service.</li>
+                    <li>Technical Excellence: We stay updated with the latest technologies and techniques, guaranteeing high-quality repairs and maintenance.</li>
+                    <li>Integrity: We operate with honesty, ethics, and professionalism in all interactions.</li>
+                    <li>Accountability: We take ownership of our work, standing behind our repairs and services.</li>
+                    <li>Continuous Improvement: We strive for excellence, embracing innovation and feedback to enhance our services.</li>
+                    <li>Sustainability: We promote eco-friendly practices, minimizing waste and reducing environmental impact.</li>
+                    <li>Teamwork: We collaborate, support, and respect each other, fostering a positive and inclusive work environment.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function callMe() {
+            const phoneNumber = document.getElementById('phone').value;
+            if (phoneNumber) {
+                window.location.href = `tel:${phoneNumber}`;
+            } else {
+                alert('Please enter a phone number.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <img src="assets/logo.png.jpeg" alt="Machine Care Logo">
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+            <h3>Contact Information</h3>
+            <p><strong>Phone Number:</strong> <a href="tel:+919035181616">9035181616</a></p>
+            <p><strong>Email:</strong> <a href="mailto:support@machinecare.co.in">support@machinecare.co.in</a></p>
+            <p><strong>Address:</strong></p>
+            <p>Number 124, 3rd Cross<br>
+               Triveni Road, Yeshwanthpur<br>
+               Bengaluru - 560022, Karnataka, India</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://wa.me/919035181616" target="_blank" class="social-icon whatsapp">WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Machine Care. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Care - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <!-- (Same as index.html) -->
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+    <!-- Footer Section -->
+    <!-- (Same as index.html) -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Machine Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/logo.png.jpeg" alt="Company Logo" class="logo">
+                    <span class="company-name">MACHINE CARE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Contact Us</a></li>
+                    </ul>
+                    <div class="contact-form ml-3">
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number">
+                        <button class="btn btn-primary mt-2" onclick="callMe()">Call Me</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+
+   
+
+<!-- Floating Icons -->
+<div class="floating-icons">
+    <a href="tel:+919035181616" class="floating-icon phone" title="Call Us">
+        <img src="assets/phone.icon.png" alt="Phone Icon">
+    </a>
+    <a href="https://wa.me/919035181616" class="floating-icon whatsapp" title="WhatsApp Us" target="_blank">
+        <img src="assets/whatsapp.icon.jpeg" alt="WhatsApp Icon">
+    </a>
+</div>
